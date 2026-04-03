@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GlyphCam Support</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f2ea;
+      --card: rgba(255, 255, 255, 0.92);
+      --text: #1d2433;
+      --muted: #5d677a;
+      --accent: #165dff;
+      --line: rgba(29, 36, 51, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(22, 93, 255, 0.10), transparent 32%),
+        radial-gradient(circle at top right, rgba(255, 188, 84, 0.12), transparent 28%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    main {
+      width: min(860px, calc(100vw - 32px));
+      margin: 40px auto 64px;
+    }
+
+    .hero,
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 18px 45px rgba(21, 30, 54, 0.08);
+      backdrop-filter: blur(18px);
+    }
+
+    .hero {
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+
+    .hero-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      display: inline-flex;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(22, 93, 255, 0.10);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      padding: 4px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+      border-radius: 999px;
+      gap: 4px;
+    }
+
+    .lang-switch button {
+      border: 0;
+      border-radius: 999px;
+      background: transparent;
+      color: var(--muted);
+      padding: 8px 14px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .lang-switch button.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    h1 {
+      margin: 14px 0 8px;
+      font-size: clamp(30px, 5vw, 42px);
+      line-height: 1.1;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 22px;
+      line-height: 1.25;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .card {
+      padding: 22px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .meta {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .label {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .lang-block {
+      display: none;
+    }
+
+    body[data-lang="ja"] .lang-block[data-lang="ja"],
+    body[data-lang="en"] .lang-block[data-lang="en"] {
+      display: block;
+    }
+
+    .lang-block:last-child p:last-child,
+    .lang-block:last-child ul:last-child {
+      margin-bottom: 0;
+    }
+
+    .links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .button-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 10px 16px;
+      border-radius: 14px;
+      background: rgba(22, 93, 255, 0.10);
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    @media (max-width: 640px) {
+      main {
+        width: calc(100vw - 20px);
+        margin: 20px auto 40px;
+      }
+
+      .hero,
+      .card {
+        border-radius: 20px;
+        padding: 18px;
+      }
+
+      .hero-top {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .lang-switch {
+        width: fit-content;
+      }
+    }
+  </style>
+</head>
+<body data-lang="ja">
+  <main>
+    <section class="hero">
+      <div class="hero-top">
+        <span class="badge">GlyphCam</span>
+        <div class="lang-switch" aria-label="Language switch">
+          <button type="button" class="active" data-switch-lang="ja">日本語</button>
+          <button type="button" data-switch-lang="en">English</button>
+        </div>
+      </div>
+
+      <div class="lang-block" data-lang="ja">
+        <h1>サポート</h1>
+        <p>
+          GlyphCam の使い方、権限、保存、共有、プライバシーに関する問い合わせ先をまとめています。
+          App Store のサポート URL にはこのページを使用できます。
+        </p>
+        <div class="meta">
+          <div><span class="label">対象アプリ:</span> GlyphCam</div>
+          <div><span class="label">最終更新日:</span> 2026年4月3日</div>
+        </div>
+      </div>
+
+      <div class="lang-block" data-lang="en">
+        <h1>Support</h1>
+        <p>
+          This page provides contact and support information for GlyphCam, including guidance for usage,
+          permissions, saving, sharing, and privacy. You can use this page as the App Store support URL.
+        </p>
+        <div class="meta">
+          <div><span class="label">App covered:</span> GlyphCam</div>
+          <div><span class="label">Last updated:</span> April 3, 2026</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <div class="lang-block" data-lang="ja">
+          <h2>お問い合わせ</h2>
+          <p>サポートが必要な場合は、以下のメールアドレスまでご連絡ください。</p>
+          <p><a href="mailto:tc4438ys@gmail.com">tc4438ys@gmail.com</a></p>
+          <p>確認しだい順番に返信します。</p>
+        </div>
+        <div class="lang-block" data-lang="en">
+          <h2>Contact</h2>
+          <p>If you need support, please contact us at the email address below.</p>
+          <p><a href="mailto:tc4438ys@gmail.com">tc4438ys@gmail.com</a></p>
+          <p>We will respond as soon as we can.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="lang-block" data-lang="ja">
+          <h2>サポート内容</h2>
+          <ul>
+            <li>Glyph / 3D / Vector / Photo / More の基本操作</li>
+            <li>ファイルの読込・保存・書き出し</li>
+            <li>写真保存、共有、プレビュー表示</li>
+            <li>権限に関する案内（カメラ、写真、カレンダー、リマインダー）</li>
+            <li>プライバシーに関する問い合わせ</li>
+          </ul>
+        </div>
+        <div class="lang-block" data-lang="en">
+          <h2>What We Can Help With</h2>
+          <ul>
+            <li>Basic usage of Glyph, 3D, Vector, Photo, and More</li>
+            <li>Importing, saving, and exporting files</li>
+            <li>Saving to Photos, sharing, and preview behavior</li>
+            <li>Permission guidance for camera, photos, calendar, and reminders</li>
+            <li>Privacy-related questions</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="lang-block" data-lang="ja">
+          <h2>関連ページ</h2>
+          <div class="links">
+            <a class="button-link" href="./glyphcam-privacy-policy.html">プライバシーポリシー</a>
+            <a class="button-link" href="./">トップへ戻る</a>
+          </div>
+        </div>
+        <div class="lang-block" data-lang="en">
+          <h2>Related Pages</h2>
+          <div class="links">
+            <a class="button-link" href="./glyphcam-privacy-policy.html">Privacy Policy</a>
+            <a class="button-link" href="./">Back to Top</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      const storageKey = "glyphcam-site-lang";
+      const buttons = Array.from(document.querySelectorAll("[data-switch-lang]"));
+      const preferred = localStorage.getItem(storageKey);
+      const browserPrefersJapanese = (navigator.language || "").toLowerCase().startsWith("ja");
+      const initialLang = preferred || (browserPrefersJapanese ? "ja" : "en");
+
+      function applyLanguage(lang) {
+        document.body.setAttribute("data-lang", lang);
+        buttons.forEach((button) => {
+          button.classList.toggle("active", button.dataset.switchLang === lang);
+        });
+        localStorage.setItem(storageKey, lang);
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => applyLanguage(button.dataset.switchLang));
+      });
+
+      applyLanguage(initialLang);
+    }());
+  </script>
+</body>
+</html>
