@@ -666,6 +666,117 @@ RAWディテール は Studio &gt; Desktop Panels &gt; Camera Raw 側に RAW 読
                 <li>Super Resolution currently supports <code>2X</code></li>
               </ul>
             </div>
+
+            <div class="subcard">
+              <h3>Full Text Version</h3>
+              <pre class="raw-text">&lt;Fonts Social Photo Text Inserter - Japanese &amp; English APP is a simple app that allows you to insert 3D text into images and canvases.&gt;
+・ 3D fonts in Japanese and English are available.
+・ Supports vertical writing.
+・ Text size can be freely changed.
+・ Text color can be freely changed.
+・ Text background color can be freely changed.
+・ Text can be displayed in three dimensions (3D).
+・ Character spacing (kerning) can be freely changed.
+・ Line spacing can be freely changed.
+・ Text tilt can be freely changed.
+
+&lt;In 3D [world] mode, a cat will be displayed. Try this on your actual device.&gt;
+・ 3D -&gt; Hide UI
+・ Check if only the cat is visible
+・ Check if the UI returns when you tap the screen
+・ Shoot
+・ Check if the option to save / share photo appears
+(3D -&gt; Camera On -&gt; Check if the outside background is visible live -&gt; Shoot -&gt; Check if you can reach the share sheet)
+
+&lt;Vector offers a reminder app to help you organize your daily life.&gt;
+・ Easily set timers, calendar events, and reminders. All can be used repeatedly.
+・ Timers are displayed as full-screen notifications.
+・ There is no limit to the period you can set.
+
+"Board"... Board is a tool for adding, duplicating, and deleting artboards. Use it like this.
+1. Select Board at the top.
+2. Operate with the small bar that appears at the top.
+3. Tap + to add a new artboard.
+4. Tap the overlapping squares to duplicate the current artboard.
+5. Tap the trash can to delete the current artboard.
+However, you cannot delete it when there is only one artboard.
+
+"Blend"... Try Blend -&gt; tap the first object -&gt; tap the second object.
+
+"What is a path?" A path is a free line or shape created with Pen or Curve.
+In this app:
+・ Rectangle is a rectangle
+・ Circle is a circle
+・ Line is a straight line
+・ Path is a freeform shape created with Pen / Curve
+For example:
+・ a line created by placing points with Pen
+・ a curve created with Curve
+These are paths.
+On the other hand, rectangles and circles are dedicated shapes internally, so Warp does not fully work on them.
+To try Warp on an actual device, the easiest way is:
+select Pen -&gt; draw one line -&gt; confirm -&gt; Warp -&gt; drag that line.
+In short:
+・ Path = freely drawn line or shape
+・ Rectangle / Circle = dedicated shapes, not paths
+
+"Warp"... Use it by dragging the object you want to transform directly with your finger.
+How to use:
+・ Prepare one path
+・ Select Warp at the top
+・ Drag directly on the line you want to deform
+・ Release your finger to confirm the shape
+Notes:
+・ Nothing happens if you drag empty space
+・ Grab the object itself, not just near the line
+・ Current Warp behaves more like local path drag deformation than a general warp tool
+
+"Eyedropper"... Eyedropper -&gt; tap an item to pick it -&gt; apply if needed.
+
+"Shape Builder"... It now remembers the first shape.
+・ Tap the first closed shape
+・ Tap the second closed shape to merge immediately
+If the second one is hard to tap because of overlap, tap the first one again and it will merge with the overlapping target automatically.
+(Example: overlap two rectangles slightly -&gt; Shape Builder -&gt; first tap -&gt; second tap)
+
+"Scissors"... In Vector, try tapping once near a line with Scissors. It is tuned so one tap near the line cuts it immediately.
+
+"Pen"... The case was the Pen inside the Brush tool on the top row. On actual devices, PKCanvasView had been Apple Pencil only, so you could not draw with your finger.
+It was fixed by changing drawingPolicy to anyInput so you can draw directly with your finger on iPhone.
+
+&lt;Photo is an image editing app with a full range of advanced tools.&gt;
+・ You can adjust brightness and saturation.
+・ Photo lets you customize photos, images, and designs in many ways.
+・ It supports multiple file formats.
+・ Try Photo -&gt; Studio -&gt; Look -&gt; Noir. You should see a change in both the canvas and the overall preview.
+・ In this version, Photo super resolution supports only 2X.
+    * Higher image quality can be targeted
+    * Detail completion and texture reproduction are stronger than CI
+    * However, it is heavy
+    * Trained model creation, quantization, conversion, and device-specific testing are required
+    * App size, memory, heat, and processing time must be managed
+(Photo -&gt; Adjust -&gt; Detailed Tools -&gt; Super Resolution -&gt; 2X)
+For Super Resolution, Creativity stops at 50 on actual devices.
+Changes:
+* Added an upper limit of 50 for Creativity
+* The value is clamped automatically when switching models
+* The UI slider also uses 0...50 when Creativity is selected
+High Detail stops at 51, Creativity at 50, and Standard at 54.
+
+What you can currently see on actual iPhone:
+Basic Adjustments are in the Adjust tab.
+Black &amp; White appears as Monochrome and B/W mixer.
+Grain appears as Grain.
+Denoise is visible.
+Color Grading is visible.
+Color Mixer is visible.
+
+Conditionally visible items:
+Character spacing appears as tracking / leading when a text layer is selected.
+Gradient Map appears when an adjustment layer is selected.
+RAW Detail appears through Studio &gt; Desktop Panels &gt; Camera Raw when RAW is loaded.
+Filter does not appear as an independent Filter panel; Blur / Motion Blur / Sharpen / Glow and similar items are distributed under Basic Adjustments.</pre>
+            </div>
           </div>
         </div>
         <div class="lang-block" data-lang="el">
@@ -713,6 +824,116 @@ RAWディテール は Studio &gt; Desktop Panels &gt; Camera Raw 側に RAW 読
                 <li>Λεπτομερή εργαλεία όπως monochrome, grain, denoise, color grading και color mixer</li>
                 <li>Το Super Resolution υποστηρίζει προς το παρόν μόνο <code>2X</code></li>
               </ul>
+            </div>
+
+            <div class="subcard">
+              <h3>Πλήρης Έκδοση Κειμένου</h3>
+              <pre class="raw-text">&lt;Το Fonts Social Photo Text Inserter - Japanese &amp; English APP είναι μια απλή εφαρμογή που σας επιτρέπει να εισάγετε 3D κείμενο σε εικόνες και καμβάδες.&gt;
+・ Διατίθενται 3D γραμματοσειρές στα ιαπωνικά και στα αγγλικά.
+・ Υποστηρίζει κάθετη γραφή.
+・ Το μέγεθος του κειμένου μπορεί να αλλάξει ελεύθερα.
+・ Το χρώμα του κειμένου μπορεί να αλλάξει ελεύθερα.
+・ Το χρώμα φόντου του κειμένου μπορεί να αλλάξει ελεύθερα.
+・ Το κείμενο μπορεί να αποδοθεί τρισδιάστατα (3D).
+・ Η απόσταση χαρακτήρων (kerning) μπορεί να αλλάξει ελεύθερα.
+・ Η απόσταση γραμμών μπορεί να αλλάξει ελεύθερα.
+・ Η κλίση του κειμένου μπορεί να αλλάξει ελεύθερα.
+
+&lt;Στη λειτουργία 3D [world] εμφανίζεται μια γάτα. Δοκιμάστε το σε πραγματική συσκευή.&gt;
+・ 3D -&gt; Hide UI
+・ Ελέγξτε αν φαίνεται μόνο η γάτα
+・ Ελέγξτε αν το UI επιστρέφει όταν αγγίζετε την οθόνη
+・ Shoot
+・ Ελέγξτε αν εμφανίζονται οι επιλογές αποθήκευσης φωτογραφίας / κοινής χρήσης
+(3D -&gt; Camera On -&gt; Ελέγξτε αν το εξωτερικό φόντο φαίνεται live -&gt; Shoot -&gt; Ελέγξτε αν φτάνετε στο share sheet)
+
+&lt;Το Vector προσφέρει μια εφαρμογή υπενθυμίσεων για να οργανώνετε την καθημερινότητά σας.&gt;
+・ Μπορείτε εύκολα να ρυθμίσετε χρονοδιακόπτες, συμβάντα ημερολογίου και υπενθυμίσεις. Όλα μπορούν να επαναχρησιμοποιηθούν.
+・ Οι χρονοδιακόπτες εμφανίζονται ως ειδοποιήσεις πλήρους οθόνης.
+・ Δεν υπάρχει όριο στη χρονική περίοδο που μπορείτε να ρυθμίσετε.
+
+"Board"... Το Board είναι εργαλείο για προσθήκη, αντιγραφή και διαγραφή artboards. Χρήση:
+1. Επιλέξτε Board επάνω.
+2. Χρησιμοποιήστε τη μικρή μπάρα που εμφανίζεται στο επάνω μέρος.
+3. Πατήστε + για νέο artboard.
+4. Πατήστε τα επικαλυπτόμενα τετράγωνα για να αντιγράψετε το τρέχον artboard.
+5. Πατήστε τον κάδο για να διαγράψετε το τρέχον artboard.
+Αν υπάρχει μόνο ένα artboard, δεν μπορεί να διαγραφεί.
+
+"Blend"... Δοκιμάστε Blend -&gt; πατήστε το πρώτο αντικείμενο -&gt; πατήστε το δεύτερο αντικείμενο.
+
+"Τι είναι path;" Το path είναι ελεύθερη γραμμή ή σχήμα που δημιουργείται με Pen ή Curve.
+Σε αυτή την εφαρμογή:
+・ Το Rectangle είναι ορθογώνιο
+・ Το Circle είναι κύκλος
+・ Το Line είναι ευθεία γραμμή
+・ Το Path είναι ελεύθερο σχήμα από Pen / Curve
+Παραδείγματα:
+・ γραμμή που δημιουργείται τοποθετώντας σημεία με Pen
+・ καμπύλη που δημιουργείται με Curve
+Αυτά είναι paths.
+Αντίθετα, το Rectangle και το Circle είναι εσωτερικά ειδικά σχήματα, οπότε το Warp δεν λειτουργεί πλήρως σε αυτά.
+Για δοκιμή Warp σε πραγματική συσκευή: Pen -&gt; σχεδιάστε μία γραμμή -&gt; επιβεβαίωση -&gt; Warp -&gt; σύρετε τη γραμμή.
+Με λίγα λόγια:
+・ Path = ελεύθερα σχεδιασμένη γραμμή ή σχήμα
+・ Rectangle / Circle = ειδικά σχήματα, όχι paths
+
+"Warp"... Χρησιμοποιείται σύροντας απευθείας με το δάχτυλο το αντικείμενο που θέλετε να παραμορφώσετε.
+Χρήση:
+・ Ετοιμάστε ένα path
+・ Επιλέξτε Warp στο επάνω μέρος
+・ Σύρετε επάνω στη γραμμή που θέλετε να παραμορφώσετε
+・ Αφήστε το δάχτυλο για επιβεβαίωση
+Σημειώσεις:
+・ Αν σύρετε σε κενό χώρο, δεν συμβαίνει τίποτα
+・ Πιάστε το ίδιο το αντικείμενο, όχι απλώς κοντά στη γραμμή
+・ Το τρέχον Warp μοιάζει περισσότερο με τοπική παραμόρφωση path με drag
+
+"Eyedropper"... Eyedropper -&gt; πατήστε ένα στοιχείο για δειγματοληψία -&gt; εφαρμόστε αν χρειάζεται.
+
+"Shape Builder"... Τώρα θυμάται το πρώτο σχήμα.
+・ Πατήστε το πρώτο κλειστό σχήμα
+・ Πατήστε το δεύτερο κλειστό σχήμα για άμεση συγχώνευση
+Αν το δεύτερο είναι δύσκολο να πατηθεί λόγω επικάλυψης, πατήστε ξανά το πρώτο και θα συγχωνευθεί αυτόματα με το επικαλυπτόμενο αντικείμενο.
+(Παράδειγμα: δύο ορθογώνια ελαφρώς επικαλυπτόμενα -&gt; Shape Builder -&gt; πρώτο πάτημα -&gt; δεύτερο πάτημα)
+
+"Scissors"... Στο Vector, δοκιμάστε ένα πάτημα κοντά σε μια γραμμή με το Scissors. Έχει ρυθμιστεί ώστε ένα μόνο πάτημα κοντά στη γραμμή να την κόβει άμεσα.
+
+"Pen"... Η περίπτωση ήταν το Pen μέσα στο εργαλείο Brush της επάνω σειράς. Σε πραγματικές συσκευές, το PKCanvasView ήταν μόνο για Apple Pencil, οπότε δεν μπορούσατε να σχεδιάσετε με το δάχτυλο.
+Διορθώθηκε αλλάζοντας το drawingPolicy σε anyInput, ώστε να σχεδιάζετε απευθείας με το δάχτυλο στο iPhone.
+
+&lt;Το Photo είναι μια εφαρμογή επεξεργασίας εικόνας με πλήρες σύνολο προηγμένων εργαλείων.&gt;
+・ Μπορείτε να ρυθμίσετε φωτεινότητα και κορεσμό.
+・ Το Photo σας επιτρέπει να προσαρμόζετε φωτογραφίες, εικόνες και σχέδια με πολλούς τρόπους.
+・ Υποστηρίζει πολλαπλές μορφές αρχείων.
+・ Δοκιμάστε Photo -&gt; Studio -&gt; Look -&gt; Noir. Θα δείτε αλλαγή τόσο στον καμβά όσο και στη συνολική προεπισκόπηση.
+・ Σε αυτή την έκδοση, το super resolution του Photo υποστηρίζει μόνο 2X.
+    * Στοχεύει σε υψηλότερη ποιότητα εικόνας
+    * Η συμπλήρωση λεπτομερειών και η αναπαραγωγή υφής είναι ισχυρότερες από το CI
+    * Ωστόσο είναι βαρύ
+    * Απαιτείται δημιουργία εκπαιδευμένου μοντέλου, quantization, conversion και έλεγχος ανά συσκευή
+    * Πρέπει να διαχειριστείτε μέγεθος εφαρμογής, μνήμη, θερμότητα και χρόνο επεξεργασίας
+(Photo -&gt; Adjust -&gt; Detailed Tools -&gt; Super Resolution -&gt; 2X)
+Στο Super Resolution, το Creativity σταματά στο 50 σε πραγματικές συσκευές.
+Αλλαγές:
+* Προστέθηκε ανώτατο όριο 50 για το Creativity
+* Η τιμή περιορίζεται αυτόματα κατά την αλλαγή μοντέλου
+* Το slider του UI χρησιμοποιεί επίσης 0...50 όταν είναι επιλεγμένο το Creativity
+Το High Detail σταματά στο 51, το Creativity στο 50 και το Standard στο 54.
+
+Αυτά που φαίνονται τώρα σε πραγματικό iPhone:
+Το Basic Adjustments βρίσκεται στην καρτέλα Adjust.
+Το Black &amp; White εμφανίζεται ως Monochrome και B/W mixer.
+Το Grain εμφανίζεται ως Grain.
+Το Denoise είναι ορατό.
+Το Color Grading είναι ορατό.
+Το Color Mixer είναι ορατό.
+
+Στοιχεία που εμφανίζονται υπό προϋποθέσεις:
+Το Character spacing εμφανίζεται ως tracking / leading όταν επιλέγεται text layer.
+Το Gradient Map εμφανίζεται όταν επιλέγεται adjustment layer.
+Το RAW Detail εμφανίζεται μέσω Studio &gt; Desktop Panels &gt; Camera Raw όταν φορτώνεται RAW.
+Το Filter δεν εμφανίζεται ως ανεξάρτητο panel· τα Blur / Motion Blur / Sharpen / Glow και παρόμοια στοιχεία είναι κατανεμημένα στα Basic Adjustments.</pre>
             </div>
           </div>
         </div>
@@ -762,6 +983,116 @@ RAWディテール は Studio &gt; Desktop Panels &gt; Camera Raw 側に RAW 読
                 <li>Super Resolution unterstützt derzeit nur <code>2X</code></li>
               </ul>
             </div>
+
+            <div class="subcard">
+              <h3>Volltextversion</h3>
+              <pre class="raw-text">&lt;Fonts Social Photo Text Inserter - Japanese &amp; English APP ist eine einfache App, mit der Sie 3D-Text in Bilder und Leinwände einfügen können.&gt;
+・ 3D-Schriften in Japanisch und Englisch sind verfügbar.
+・ Vertikales Schreiben wird unterstützt.
+・ Die Textgröße kann frei geändert werden.
+・ Die Textfarbe kann frei geändert werden.
+・ Die Hintergrundfarbe des Textes kann frei geändert werden.
+・ Text kann dreidimensional (3D) dargestellt werden.
+・ Der Zeichenabstand (Kerning) kann frei geändert werden.
+・ Der Zeilenabstand kann frei geändert werden.
+・ Die Neigung des Textes kann frei geändert werden.
+
+&lt;Im 3D-[world]-Modus wird eine Katze angezeigt. Testen Sie dies auf Ihrem echten Gerät.&gt;
+・ 3D -&gt; Hide UI
+・ Prüfen Sie, ob nur die Katze sichtbar ist
+・ Prüfen Sie, ob die UI zurückkehrt, wenn Sie auf den Bildschirm tippen
+・ Shoot
+・ Prüfen Sie, ob die Optionen zum Speichern / Teilen des Fotos erscheinen
+(3D -&gt; Camera On -&gt; Prüfen Sie, ob der Außenhintergrund live sichtbar ist -&gt; Shoot -&gt; Prüfen Sie, ob Sie das Share Sheet erreichen)
+
+&lt;Vector bietet eine Erinnerungs-App, mit der Sie Ihren Alltag organisieren können.&gt;
+・ Timer, Kalendereinträge und Erinnerungen lassen sich einfach einrichten. Alles kann wiederholt verwendet werden.
+・ Timer werden als Vollbildbenachrichtigungen angezeigt.
+・ Für den einstellbaren Zeitraum gibt es keine Obergrenze.
+
+"Board"... Board ist ein Werkzeug zum Hinzufügen, Duplizieren und Löschen von Artboards. Verwendung:
+1. Wählen Sie oben Board.
+2. Bedienen Sie die kleine Leiste, die oben erscheint.
+3. Tippen Sie auf +, um ein neues Artboard hinzuzufügen.
+4. Tippen Sie auf die überlappenden Quadrate, um das aktuelle Artboard zu duplizieren.
+5. Tippen Sie auf den Papierkorb, um das aktuelle Artboard zu löschen.
+Wenn nur ein Artboard vorhanden ist, kann es nicht gelöscht werden.
+
+"Blend"... Probieren Sie Blend -&gt; erstes Objekt antippen -&gt; zweites Objekt antippen.
+
+"Was ist ein Pfad?" Ein Pfad ist eine freie Linie oder Form, die mit Pen oder Curve erzeugt wird.
+In dieser App:
+・ Rectangle ist ein Rechteck
+・ Circle ist ein Kreis
+・ Line ist eine gerade Linie
+・ Path ist eine freie Form aus Pen / Curve
+Zum Beispiel:
+・ eine Linie, die durch Punkte mit Pen erstellt wird
+・ eine Kurve, die mit Curve erstellt wird
+Das sind Pfade.
+Rechtecke und Kreise sind dagegen intern spezielle Formen, daher funktioniert Warp darauf nicht vollständig.
+Um Warp auf einem echten Gerät zu testen: Pen -&gt; eine Linie zeichnen -&gt; bestätigen -&gt; Warp -&gt; diese Linie ziehen.
+Kurz gesagt:
+・ Path = frei gezeichnete Linie oder Form
+・ Rectangle / Circle = spezielle Formen, keine Pfade
+
+"Warp"... Verwenden Sie es, indem Sie das Objekt, das Sie verformen möchten, direkt mit dem Finger ziehen.
+Verwendung:
+・ Bereiten Sie einen Pfad vor
+・ Wählen Sie oben Warp
+・ Ziehen Sie direkt auf der Linie, die Sie verformen möchten
+・ Lassen Sie den Finger los, um die Form zu bestätigen
+Hinweise:
+・ Wenn Sie leeren Raum ziehen, passiert nichts
+・ Greifen Sie das Objekt selbst, nicht nur die Nähe der Linie
+・ Das aktuelle Warp verhält sich eher wie eine lokale Pfadverformung per Drag
+
+"Eyedropper"... Eyedropper -&gt; Element antippen, um Farbe aufzunehmen -&gt; bei Bedarf anwenden.
+
+"Shape Builder"... Merkt sich jetzt die erste Form.
+・ Tippen Sie die erste geschlossene Form an
+・ Tippen Sie die zweite geschlossene Form an, um sofort zu verschmelzen
+Wenn die zweite Form wegen Überlappung schwer zu treffen ist, tippen Sie die erste Form erneut an; dann wird automatisch mit dem überlappenden Ziel verschmolzen.
+(Beispiel: zwei Rechtecke leicht überlappen -&gt; Shape Builder -&gt; erster Tipp -&gt; zweiter Tipp)
+
+"Scissors"... Tippen Sie in Vector mit Scissors einmal in die Nähe einer Linie. Es ist so abgestimmt, dass ein Tipp nahe der Linie sofort schneidet.
+
+"Pen"... Betroffen war der Pen im Brush-Werkzeug der oberen Leiste. Auf echten Geräten war PKCanvasView nur für Apple Pencil aktiviert, daher konnte man nicht mit dem Finger zeichnen.
+Dies wurde behoben, indem drawingPolicy auf anyInput geändert wurde, sodass direkt mit dem Finger auf dem iPhone gezeichnet werden kann.
+
+&lt;Photo ist eine Bildbearbeitungs-App mit einer vollständigen Palette an erweiterten Werkzeugen.&gt;
+・ Sie können Helligkeit und Sättigung anpassen.
+・ Mit Photo können Sie Fotos, Bilder und Designs auf viele Arten anpassen.
+・ Es werden mehrere Dateiformate unterstützt.
+・ Probieren Sie Photo -&gt; Studio -&gt; Look -&gt; Noir. Sie sollten sowohl auf der Leinwand als auch in der Gesamtvorschau eine Veränderung sehen.
+・ In dieser Version unterstützt Photo Super Resolution nur 2X.
+    * Höhere Bildqualität kann angestrebt werden
+    * Detailergänzung und Texturwiedergabe sind stärker als bei CI
+    * Allerdings ist die Verarbeitung schwer
+    * Training, Quantisierung, Konvertierung und gerätespezifische Tests sind erforderlich
+    * App-Größe, Speicher, Wärme und Verarbeitungszeit müssen beachtet werden
+(Photo -&gt; Adjust -&gt; Detailed Tools -&gt; Super Resolution -&gt; 2X)
+Bei Super Resolution stoppt Creativity auf echten Geräten bei 50.
+Änderungen:
+* Obergrenze 50 für Creativity hinzugefügt
+* Der Wert wird beim Modellwechsel automatisch begrenzt
+* Der UI-Slider verwendet ebenfalls 0...50, wenn Creativity ausgewählt ist
+High Detail stoppt bei 51, Creativity bei 50 und Standard bei 54.
+
+Was derzeit auf dem echten iPhone sichtbar ist:
+Basic Adjustments befinden sich im Tab Adjust.
+Black &amp; White erscheint als Monochrome und B/W mixer.
+Grain erscheint als Grain.
+Denoise ist sichtbar.
+Color Grading ist sichtbar.
+Color Mixer ist sichtbar.
+
+Bedingt sichtbare Elemente:
+Character spacing erscheint als Tracking / Leading, wenn eine Textebene ausgewählt ist.
+Gradient Map erscheint, wenn eine Adjustment-Ebene ausgewählt ist.
+RAW Detail erscheint über Studio &gt; Desktop Panels &gt; Camera Raw, wenn RAW geladen wird.
+Filter erscheint nicht als eigenes Filter-Panel; Blur / Motion Blur / Sharpen / Glow und ähnliche Elemente sind unter Basic Adjustments verteilt.</pre>
+            </div>
           </div>
         </div>
         <div class="lang-block" data-lang="fr">
@@ -810,6 +1141,116 @@ RAWディテール は Studio &gt; Desktop Panels &gt; Camera Raw 側に RAW 読
                 <li>La super résolution prend actuellement en charge uniquement <code>2X</code></li>
               </ul>
             </div>
+
+            <div class="subcard">
+              <h3>Version complète</h3>
+              <pre class="raw-text">&lt;Fonts Social Photo Text Inserter - Japanese &amp; English APP est une application simple qui permet d’insérer du texte 3D dans des images et des canevas.&gt;
+・ Des polices 3D en japonais et en anglais sont disponibles.
+・ L’écriture verticale est prise en charge.
+・ La taille du texte peut être modifiée librement.
+・ La couleur du texte peut être modifiée librement.
+・ La couleur d’arrière-plan du texte peut être modifiée librement.
+・ Le texte peut être affiché en trois dimensions (3D).
+・ L’espacement des caractères (kerning) peut être modifié librement.
+・ L’interligne peut être modifié librement.
+・ L’inclinaison du texte peut être modifiée librement.
+
+&lt;En mode 3D [world], un chat s’affiche. Essayez ceci sur votre appareil réel.&gt;
+・ 3D -&gt; Hide UI
+・ Vérifiez si seul le chat est visible
+・ Vérifiez si l’interface revient lorsque vous touchez l’écran
+・ Shoot
+・ Vérifiez si l’option d’enregistrement / partage de photo apparaît
+(3D -&gt; Camera On -&gt; Vérifiez si l’arrière-plan extérieur est visible en direct -&gt; Shoot -&gt; Vérifiez si vous atteignez la feuille de partage)
+
+&lt;Vector propose une application de rappels pour organiser votre quotidien.&gt;
+・ Vous pouvez configurer facilement des minuteurs, des événements de calendrier et des rappels. Tous peuvent être réutilisés.
+・ Les minuteurs sont affichés comme des notifications plein écran.
+・ Il n’y a pas de limite à la période que vous pouvez définir.
+
+"Board"... Board est un outil pour ajouter, dupliquer et supprimer des plans de travail. Utilisation :
+1. Sélectionnez Board en haut.
+2. Utilisez la petite barre qui apparaît en haut.
+3. Touchez + pour ajouter un nouveau plan de travail.
+4. Touchez les carrés superposés pour dupliquer le plan de travail actuel.
+5. Touchez la corbeille pour supprimer le plan de travail actuel.
+S’il n’y a qu’un seul plan de travail, il ne peut pas être supprimé.
+
+"Blend"... Essayez Blend -&gt; touchez le premier objet -&gt; touchez le second objet.
+
+"Qu’est-ce qu’un path ?" Un path est une ligne ou une forme libre créée avec Pen ou Curve.
+Dans cette application :
+・ Rectangle est un rectangle
+・ Circle est un cercle
+・ Line est une ligne droite
+・ Path est une forme libre créée avec Pen / Curve
+Par exemple :
+・ une ligne créée en plaçant des points avec Pen
+・ une courbe créée avec Curve
+Ce sont des paths.
+En revanche, Rectangle et Circle sont des formes dédiées en interne, donc Warp ne fonctionne pas pleinement sur elles.
+Pour tester Warp sur un appareil réel : Pen -&gt; dessiner une ligne -&gt; confirmer -&gt; Warp -&gt; faire glisser cette ligne.
+En résumé :
+・ Path = ligne ou forme dessinée librement
+・ Rectangle / Circle = formes dédiées, pas des paths
+
+"Warp"... Utilisez-le en faisant glisser directement avec le doigt l’objet à déformer.
+Utilisation :
+・ Préparez un path
+・ Sélectionnez Warp en haut
+・ Faites glisser directement sur la ligne que vous voulez déformer
+・ Relâchez le doigt pour confirmer la forme
+Remarques :
+・ Rien ne se passe si vous faites glisser un espace vide
+・ Saisissez l’objet lui-même, pas seulement près de la ligne
+・ Le Warp actuel se comporte davantage comme une déformation locale de path par glissement
+
+"Eyedropper"... Eyedropper -&gt; touchez un élément pour prélever -&gt; appliquez si nécessaire.
+
+"Shape Builder"... Il mémorise maintenant la première forme.
+・ Touchez la première forme fermée
+・ Touchez la seconde forme fermée pour fusionner immédiatement
+Si la seconde est difficile à toucher à cause du chevauchement, touchez de nouveau la première et elle fusionnera automatiquement avec l’élément superposé.
+(Exemple : superposez légèrement deux rectangles -&gt; Shape Builder -&gt; premier toucher -&gt; second toucher)
+
+"Scissors"... Dans Vector, essayez de toucher une fois près d’une ligne avec Scissors. L’outil est réglé pour couper immédiatement après un seul toucher près de la ligne.
+
+"Pen"... Le problème concernait le Pen dans l’outil Brush de la rangée supérieure. Sur les appareils réels, PKCanvasView était limité à l’Apple Pencil, il n’était donc pas possible de dessiner au doigt.
+Cela a été corrigé en changeant drawingPolicy en anyInput, afin de dessiner directement au doigt sur iPhone.
+
+&lt;Photo est une application d’édition d’image dotée d’un ensemble complet d’outils avancés.&gt;
+・ Vous pouvez ajuster la luminosité et la saturation.
+・ Photo vous permet de personnaliser photos, images et designs de diverses façons.
+・ Plusieurs formats de fichiers sont pris en charge.
+・ Essayez Photo -&gt; Studio -&gt; Look -&gt; Noir. Vous devriez voir un changement à la fois sur le canevas et dans l’aperçu global.
+・ Dans cette version, la super résolution de Photo ne prend en charge que le 2X.
+    * Une qualité d’image plus élevée peut être visée
+    * La reconstruction des détails et la restitution des textures sont plus fortes que CI
+    * Cependant le traitement est lourd
+    * La création du modèle entraîné, la quantification, la conversion et les tests par appareil sont nécessaires
+    * La taille de l’app, la mémoire, la chaleur et le temps de traitement doivent être gérés
+(Photo -&gt; Ajustements -&gt; Outils détaillés -&gt; Super Resolution -&gt; 2X)
+Pour Super Resolution, Creativity s’arrête à 50 sur les appareils réels.
+Modifications :
+* Ajout d’une limite supérieure de 50 pour Creativity
+* La valeur est automatiquement bornée lors du changement de modèle
+* Le curseur UI utilise également 0...50 lorsque Creativity est sélectionné
+High Detail s’arrête à 51, Creativity à 50 et Standard à 54.
+
+Ce qui est visible actuellement sur l’iPhone réel :
+Basic Adjustments se trouve dans l’onglet Adjust.
+Black &amp; White apparaît comme Monochrome et B/W mixer.
+Grain apparaît comme Grain.
+Denoise est visible.
+Color Grading est visible.
+Color Mixer est visible.
+
+Éléments visibles sous condition :
+Character spacing apparaît comme tracking / leading lorsqu’un calque de texte est sélectionné.
+Gradient Map apparaît lorsqu’un calque d’ajustement est sélectionné.
+RAW Detail apparaît via Studio &gt; Desktop Panels &gt; Camera Raw lorsqu’un RAW est chargé.
+Filter n’apparaît pas comme un panneau Filter indépendant ; Blur / Motion Blur / Sharpen / Glow et des éléments similaires sont répartis dans Basic Adjustments.</pre>
+            </div>
           </div>
         </div>
         <div class="lang-block" data-lang="ko">
@@ -857,6 +1298,118 @@ RAWディテール は Studio &gt; Desktop Panels &gt; Camera Raw 側に RAW 読
                 <li>흑백, 그레인, 노이즈 제거, 컬러 그레이딩, 컬러 믹서 등 세부 도구</li>
                 <li>슈퍼 해상도는 현재 <code>2X</code> 만 지원합니다.</li>
               </ul>
+            </div>
+
+            <div class="subcard">
+              <h3>전체 본문 버전</h3>
+              <pre class="raw-text">&lt;Fonts Social Photo Text Inserter - Japanese &amp; English APP는 이미지와 캔버스에 3D 텍스트를 삽입할 수 있는 간단한 앱입니다.&gt;
+・ 일본어, 영어 3D 폰트를 사용할 수 있습니다.
+・ 세로쓰기를 지원합니다.
+・ 글자 크기를 자유롭게 변경할 수 있습니다.
+・ 글자 색을 자유롭게 변경할 수 있습니다.
+・ 글자 배경색을 자유롭게 변경할 수 있습니다.
+・ 글자를 입체적으로(3D) 표현할 수 있습니다.
+・ 글자 간격(커닝)을 자유롭게 변경할 수 있습니다.
+・ 줄 간격을 자유롭게 변경할 수 있습니다.
+・ 글자 기울기를 자유롭게 변경할 수 있습니다.
+
+&lt;3D [world]에서는 고양이가 표시됩니다. 실제 기기에서 이것을 테스트해 보세요.&gt;
+・ 3D -&gt; Hide UI
+・ 고양이만 보이는지 확인
+・ 화면을 탭했을 때 UI 가 다시 돌아오는지 확인
+・ Shoot
+・ 사진 저장 / 공유 선택이 나타나는지 확인
+(3D -&gt; Camera On -&gt; 바깥 배경이 live 로 보이는지 확인 -&gt; Shoot -&gt; 공유 시트까지 가는지 확인)
+
+&lt;Vector에서는 일상을 정리하는 리마인더 앱처럼 사용할 수 있습니다.&gt;
+・ 타이머, 캘린더 일정, 리마인더를 쉽게 설정할 수 있습니다. 모두 반복 사용이 가능합니다.
+・ 타이머는 전체 화면 알림으로 표시됩니다.
+・ 설정 가능한 기간에는 상한이 없습니다.
+
+"Board"... Board 는 아트보드를 추가, 복제, 삭제하는 도구입니다. 사용 방법은 다음과 같습니다.
+1. 위쪽의 Board 를 선택합니다.
+2. 위에 나타나는 작은 바에서 조작합니다.
+3. + 로 새 아트보드를 추가합니다.
+4. 겹쳐진 사각형 버튼으로 현재 아트보드를 복제합니다.
+5. 휴지통 버튼으로 현재 아트보드를 삭제합니다.
+단, 아트보드가 1개뿐일 때는 삭제할 수 없습니다.
+
+"Blend"... Blend -&gt; 첫 번째 오브젝트 탭 -&gt; 두 번째 오브젝트 탭 순서로 시도해 보세요.
+
+"Path란?" Path 는 Pen 이나 Curve 로 만드는 자유로운 선과 도형입니다.
+이 앱에서는 대략 다음과 같이 나뉩니다.
+・ Rectangle 은 사각형
+・ Circle 은 원
+・ Line 은 직선
+・ Path 는 Pen / Curve 로 만드는 자유형
+예를 들면:
+・ Pen 으로 점을 찍어 만든 선
+・ Curve 로 만든 곡선
+이것들이 path 입니다.
+반면 Rectangle 과 Circle 은 내부적으로 전용 도형이기 때문에 현재 Warp 가 본격적으로 적용되지는 않습니다.
+실기기에서 Warp 를 시험해 보려면:
+Pen 선택 -&gt; 선 하나 그리기 -&gt; 확정 -&gt; Warp -&gt; 그 선을 드래그
+가 가장 이해하기 쉽습니다.
+정리하면:
+・ Path = 자유롭게 그린 선이나 도형
+・ Rectangle / Circle = path 가 아닌 전용 도형
+
+"Warp"... 변형하고 싶은 오브젝트를 손가락으로 직접 드래그해서 사용합니다.
+사용 방법:
+・ Path 를 하나 준비합니다
+・ 위쪽의 Warp 를 선택합니다
+・ 변형하고 싶은 선 위를 직접 드래그합니다
+・ 손을 떼면 그 모양으로 확정됩니다
+보충:
+・ 아무 것도 없는 곳을 드래그해도 아무 일도 일어나지 않습니다
+・ 선 근처가 아니라 오브젝트 자체를 잡고 드래그합니다
+・ 현재 Warp 는 일반 변형보다 국소적인 path drag 변형에 가깝습니다
+
+"Eyedropper"... Eyedropper -&gt; 항목을 탭해서 색을 흡수 -&gt; 필요하면 적용.
+
+"Shape Builder"... 지금은 첫 번째 도형을 기억하도록 되어 있습니다.
+・ 첫 번째 닫힌 도형을 탭합니다
+・ 두 번째 닫힌 도형을 탭하면 즉시 합쳐집니다
+겹쳐 있어서 두 번째가 탭하기 어렵다면 첫 번째를 한 번 더 탭하면 겹친 상대와 자동으로 합쳐집니다.
+(예: 사각형 두 개를 조금 겹치기 -&gt; Shape Builder -&gt; 첫 번째 탭 -&gt; 두 번째 탭)
+
+"Scissors"... Vector 에서 Scissors 로 선 근처를 한 번 탭해 보세요. 현재는 선 근처를 한 번 탭하면 바로 잘리도록 조정되어 있습니다.
+
+"Pen"... 문제는 상단 브러시 도구 안의 Pen 이었습니다. 실제 기기에서는 PKCanvasView 가 Apple Pencil 전용이어서 손가락으로는 그릴 수 없었습니다.
+이를 drawingPolicy 를 anyInput 으로 바꿔 iPhone 에서도 손가락으로 바로 그릴 수 있게 수정했습니다.
+
+&lt;Photo 는 고급 도구를 갖춘 이미지 편집 앱입니다.&gt;
+・ 밝기와 채도를 조정할 수 있습니다.
+・ Photo 를 사용하면 사진, 이미지, 디자인을 다양한 방법으로 커스터마이즈할 수 있습니다.
+・ 여러 파일 형식을 지원합니다.
+・ Photo -&gt; Studio -&gt; Look -&gt; Noir 를 눌러 보세요. 캔버스와 전체 프리뷰 양쪽에서 변화가 보일 것입니다.
+・ 이번 버전에서 Photo 의 super resolution 은 2X 만 지원합니다.
+    * 더 높은 화질을 노릴 수 있습니다
+    * 세부 보완과 질감 재현은 CI 보다 유리합니다
+    * 다만 무겁습니다
+    * 학습 모델 생성, 양자화, 변환, 기기별 테스트가 필요합니다
+    * 앱 크기, 메모리, 발열, 처리 시간을 관리해야 합니다
+(Photo -&gt; Adjust -&gt; Detailed Tools -&gt; Super Resolution -&gt; 2X)
+Super Resolution 의 Creativity 는 실제 기기에서 50 까지만 올라가도록 되어 있습니다.
+변경 사항:
+* Creativity 의 상한을 50 으로 추가
+* 모델 전환 시 자동으로 그 상한으로 보정
+* UI 슬라이더도 Creativity 선택 시 0...50 사용
+High Detail 은 51, Creativity 는 50, Standard 는 54 에서 멈춥니다.
+
+현재 실제 iPhone 에서 보이는 것:
+Basic Adjustments 는 Adjust 탭에 있습니다.
+Black &amp; White 는 Monochrome 과 B/W mixer 로 보입니다.
+Grain 은 Grain 으로 보입니다.
+Denoise 는 보입니다.
+Color Grading 은 보입니다.
+Color Mixer 는 보입니다.
+
+조건부로 보이는 것:
+Character spacing 은 텍스트 레이어 선택 시 tracking / leading 으로 보입니다.
+Gradient Map 은 조정 레이어 선택 시 보입니다.
+RAW Detail 은 Studio &gt; Desktop Panels &gt; Camera Raw 경로에서 RAW 를 읽었을 때 접근할 수 있습니다.
+Filter 는 독립적인 Filter 패널로 보이지 않고 Blur / Motion Blur / Sharpen / Glow 같은 항목이 Basic Adjustments 쪽에 분산되어 있습니다.</pre>
             </div>
           </div>
         </div>
