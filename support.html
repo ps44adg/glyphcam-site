@@ -123,8 +123,51 @@
       color: var(--muted);
     }
 
+    ol {
+      margin: 0;
+      padding-left: 22px;
+      color: var(--muted);
+    }
+
     li + li {
       margin-top: 8px;
+    }
+
+    ol li + li {
+      margin-top: 8px;
+    }
+
+    .section-stack {
+      display: grid;
+      gap: 18px;
+    }
+
+    .subcard {
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .subcard h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      line-height: 1.35;
+    }
+
+    .subcard p:last-child,
+    .subcard ul:last-child,
+    .subcard ol:last-child {
+      margin-bottom: 0;
+    }
+
+    .note {
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: rgba(22, 93, 255, 0.08);
+      color: var(--text);
+      font-size: 14px;
     }
 
     a {
@@ -261,24 +304,171 @@
 
       <section class="card">
         <div class="lang-block" data-lang="ja">
-          <h2>サポート内容</h2>
-          <ul>
-            <li>Glyph / 3D / Vector / Photo / More の基本操作</li>
-            <li>ファイルの読込・保存・書き出し</li>
-            <li>写真保存、共有、プレビュー表示</li>
-            <li>権限に関する案内（カメラ、写真、カレンダー、リマインダー）</li>
-            <li>プライバシーに関する問い合わせ</li>
-          </ul>
+          <h2>アプリ概要</h2>
+          <p>
+            Fonts Social 写真文字入れ-日本語English APP は、画像やキャンバスに 3D の文字を挿入できるシンプルなアプリです。
+          </p>
+          <div class="section-stack">
+            <div class="subcard">
+              <h3>主な特長</h3>
+              <ul>
+                <li>日本語、英語の 3D フォントが利用できます。</li>
+                <li>縦書きに対応しています。</li>
+                <li>文字のサイズを自由に変更できます。</li>
+                <li>文字の色を自由に変更できます。</li>
+                <li>文字の背景色を自由に変更できます。</li>
+                <li>文字を立体的に表現（3D）できます。</li>
+                <li>文字の間隔（カーニング）を自由に変更できます。</li>
+                <li>行の間隔を自由に変更できます。</li>
+                <li>文字の傾きを自由に変更できます。</li>
+              </ul>
+            </div>
+
+            <div class="subcard">
+              <h3>3D【world】</h3>
+              <p>3D【world】では猫が表示されます。実機でこの流れを試してみてください。</p>
+              <ol>
+                <li><code>3D → Hide UI</code></li>
+                <li>猫だけ見えるか確認</li>
+                <li>画面タップで UI が戻るか確認</li>
+                <li><code>Shoot</code></li>
+                <li><code>写真に保存 / 共有</code> の選択が出るか確認</li>
+              </ol>
+              <div class="note">
+                ライブカメラを使うときは、<code>3D → Camera On</code> のあとに外背景が live で見えるか確認し、
+                <code>Shoot</code> を押して share sheet まで進めるかを見てください。
+              </div>
+            </div>
+
+            <div class="subcard">
+              <h3>Vector</h3>
+              <p>Vector では、日常を整えるリマインダーアプリ的な使い方もできます。</p>
+              <ul>
+                <li>タイマー、カレンダー予定、リマインダーを簡単にセットできます。</li>
+                <li>すべて繰り返し利用に対応しています。</li>
+                <li>タイマーは画面全体に通知されます。</li>
+                <li>設定できる期間に上限はありません。</li>
+              </ul>
+            </div>
+
+            <div class="subcard">
+              <h3>Vector ツールガイド</h3>
+              <ul>
+                <li><strong>ボード</strong> は、アートボードを追加・複製・削除するツールです。</li>
+                <li><strong>ブレンド</strong> は、<code>1つ目をタップ → 2つ目をタップ</code> で試せます。</li>
+                <li><strong>パス</strong> は、ペンや曲線で作る自由な線や形のことです。</li>
+                <li><strong>ワープ</strong> は、変形したいオブジェクトをそのまま指でドラッグして使います。</li>
+                <li><strong>スポイト</strong> は、項目をタップして吸い取り、必要なら適用します。</li>
+                <li><strong>形成</strong> は、<code>1個目の閉じた図形をタップ → 2個目の閉じた図形をタップ</code> で即合体します。</li>
+                <li><strong>ハサミ</strong> は、線の近くを 1 回タップするとそのまま切れる挙動です。</li>
+                <li><strong>ペン</strong> は、ブラシツール内のペンでも指入力に対応しています。</li>
+              </ul>
+              <div class="note">
+                パスは <code>ペン / 曲線</code> で作る自由形状です。長方形や円は見た目が線でも専用図形なので、
+                今のワープでは本格的な変形対象ではありません。ワープは <code>ペン → 1本描く → 確定 → ワープ → 線をドラッグ</code>
+                が一番分かりやすいです。
+              </div>
+              <div class="note">
+                ボードの使い方: <code>ボード</code> を選ぶ → 上の小さいバーで操作 → <code>＋</code> で追加 →
+                重なった四角で複製 → ゴミ箱で削除。1枚しかないときは削除できません。
+              </div>
+            </div>
+
+            <div class="subcard">
+              <h3>Photo</h3>
+              <p>Photo は、高機能ツールを揃えた画像編集アプリです。</p>
+              <ul>
+                <li>明るさ、彩度を調整できます。</li>
+                <li>写真、画像、デザインをさまざまな方法でカスタマイズできます。</li>
+                <li>複数のファイル形式に対応しています。</li>
+                <li><code>Photo → スタジオ → ルック → Noir</code> を押すと、キャンバスと全体プレビューの両方で変化が見えます。</li>
+              </ul>
+            </div>
+
+            <div class="subcard">
+              <h3>Photo の詳細ツール</h3>
+              <p>今の実機 iPhone で見える主な項目は次のとおりです。</p>
+              <ul>
+                <li><strong>基本補正</strong> は <code>補正</code> タブにあります。</li>
+                <li><strong>白黒</strong> は <code>Monochrome</code> と <code>B/W mixer</code> として見えます。</li>
+                <li><strong>粒子</strong> は <code>Grain</code> として見えます。</li>
+                <li><strong>ノイズ除去</strong> は見えます。</li>
+                <li><strong>カラーグレーディング</strong> は見えます。</li>
+                <li><strong>カラーミキサー</strong> は見えます。</li>
+              </ul>
+              <p>条件付きで見えるもの:</p>
+              <ul>
+                <li><strong>文字間調節</strong> はテキストレイヤー選択時に <code>字間 / 行間</code> として見えます。</li>
+                <li><strong>グラデーションマップ</strong> は調整レイヤー選択時に見えます。</li>
+                <li><strong>RAWディテール</strong> は <code>Studio &gt; Desktop Panels &gt; Camera Raw</code> 側にあります。</li>
+                <li><strong>フィルタ</strong> は独立パネルではなく、<code>Blur / Motion Blur / Sharpen / Glow</code> などが基本補正側へ分散しています。</li>
+              </ul>
+            </div>
+
+            <div class="subcard">
+              <h3>スーパー解像度</h3>
+              <p>今回の版では <code>Photo → 補正 → 詳細ツール → スーパー解像度 → 2X</code> が使えます。</p>
+              <ul>
+                <li>高画質を狙いやすく、細部補完や質感再現に向いています。</li>
+                <li>ただし処理は重く、メモリや発熱の影響を受けやすいです。</li>
+                <li><strong>高精細</strong> は <code>51</code>、<strong>創造性</strong> は <code>50</code>、<strong>標準</strong> は <code>54</code> で止まります。</li>
+                <li><strong>創造性</strong> はディテール補完が <code>50</code> まで、<strong>高精細</strong> は <code>51</code> までです。</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="lang-block" data-lang="en">
-          <h2>What We Can Help With</h2>
-          <ul>
-            <li>Basic usage of Glyph, 3D, Vector, Photo, and More</li>
-            <li>Importing, saving, and exporting files</li>
-            <li>Saving to Photos, sharing, and preview behavior</li>
-            <li>Permission guidance for camera, photos, calendar, and reminders</li>
-            <li>Privacy-related questions</li>
-          </ul>
+          <h2>Support Guide</h2>
+          <div class="section-stack">
+            <div class="subcard">
+              <h3>Overview</h3>
+              <p>
+                Fonts Social 写真文字入れ-日本語English is a simple app for placing 3D text on images and canvas layouts.
+              </p>
+              <ul>
+                <li>Japanese and English 3D fonts</li>
+                <li>Vertical text support</li>
+                <li>Free control over size, color, background color, kerning, line spacing, and tilt</li>
+                <li>3D text styling for creative layouts</li>
+              </ul>
+            </div>
+
+            <div class="subcard">
+              <h3>3D / world3</h3>
+              <ul>
+                <li>Try <code>3D → Hide UI</code> to view only the cat scene.</li>
+                <li>Tap the screen to bring UI back.</li>
+                <li>Use <code>Shoot</code> and confirm the save/share options appear.</li>
+                <li>For live camera mode, test <code>Camera On</code> and confirm the live background is visible before shooting.</li>
+              </ul>
+            </div>
+
+            <div class="subcard">
+              <h3>Vector</h3>
+              <ul>
+                <li>Timer, calendar, and reminder tools can be created and reused.</li>
+                <li>Board adds, duplicates, and deletes artboards.</li>
+                <li>Blend combines two selected objects.</li>
+                <li>Path means freeform shapes created by Pen or Curve.</li>
+                <li>Warp works by dragging the object directly.</li>
+                <li>Eyedropper samples and applies colors.</li>
+                <li>Shape Builder merges closed shapes.</li>
+                <li>Scissors cuts by tapping near a line.</li>
+                <li>Pen in the brush tool supports finger input on iPhone.</li>
+              </ul>
+            </div>
+
+            <div class="subcard">
+              <h3>Photo</h3>
+              <ul>
+                <li>Brightness, saturation, and other image adjustments</li>
+                <li>Multiple file formats</li>
+                <li>Look presets such as <code>Noir</code></li>
+                <li>Detailed tools including monochrome, grain, denoise, color grading, and color mixer</li>
+                <li>Super Resolution currently supports <code>2X</code></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
