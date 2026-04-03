@@ -170,6 +170,16 @@
       font-size: 14px;
     }
 
+    .raw-text {
+      margin: 0;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: inherit;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
     a {
       color: var(--accent);
       text-decoration: none;
@@ -199,7 +209,11 @@
     }
 
     body[data-lang="ja"] .lang-block[data-lang="ja"],
-    body[data-lang="en"] .lang-block[data-lang="en"] {
+    body[data-lang="en"] .lang-block[data-lang="en"],
+    body[data-lang="el"] .lang-block[data-lang="el"],
+    body[data-lang="de"] .lang-block[data-lang="de"],
+    body[data-lang="fr"] .lang-block[data-lang="fr"],
+    body[data-lang="ko"] .lang-block[data-lang="ko"] {
       display: block;
     }
 
@@ -258,6 +272,10 @@
         <div class="lang-switch" aria-label="Language switch">
           <button type="button" class="active" data-switch-lang="ja">日本語</button>
           <button type="button" data-switch-lang="en">English</button>
+          <button type="button" data-switch-lang="el">Ελληνικά</button>
+          <button type="button" data-switch-lang="de">Deutsch</button>
+          <button type="button" data-switch-lang="fr">Français</button>
+          <button type="button" data-switch-lang="ko">한국어</button>
         </div>
       </div>
 
@@ -284,6 +302,54 @@
           <div><span class="label">Last updated:</span> April 3, 2026</div>
         </div>
       </div>
+
+      <div class="lang-block" data-lang="el">
+        <h1>Υποστήριξη</h1>
+        <p>
+          Αυτή η σελίδα συγκεντρώνει οδηγίες χρήσης, δικαιώματα πρόσβασης, αποθήκευση, κοινή χρήση και πληροφορίες απορρήτου
+          για το Fonts Social 写真文字入れ-日本語English. Μπορεί να χρησιμοποιηθεί ως Support URL στο App Store.
+        </p>
+        <div class="meta">
+          <div><span class="label">Εφαρμογή:</span> Fonts Social 写真文字入れ-日本語English</div>
+          <div><span class="label">Τελευταία ενημέρωση:</span> 3 Απριλίου 2026</div>
+        </div>
+      </div>
+
+      <div class="lang-block" data-lang="de">
+        <h1>Support</h1>
+        <p>
+          Diese Seite enthält Kontakt- und Supportinformationen für Fonts Social 写真文字入れ-日本語English, einschließlich Nutzung,
+          Berechtigungen, Speichern, Teilen und Datenschutz. Sie kann als Support-URL im App Store verwendet werden.
+        </p>
+        <div class="meta">
+          <div><span class="label">App:</span> Fonts Social 写真文字入れ-日本語English</div>
+          <div><span class="label">Letzte Aktualisierung:</span> 3. April 2026</div>
+        </div>
+      </div>
+
+      <div class="lang-block" data-lang="fr">
+        <h1>Assistance</h1>
+        <p>
+          Cette page rassemble les informations de contact et d'assistance de Fonts Social 写真文字入れ-日本語English, y compris l'utilisation,
+          les autorisations, l'enregistrement, le partage et la confidentialité. Elle peut être utilisée comme URL d’assistance App Store.
+        </p>
+        <div class="meta">
+          <div><span class="label">Application :</span> Fonts Social 写真文字入れ-日本語English</div>
+          <div><span class="label">Dernière mise à jour :</span> 3 avril 2026</div>
+        </div>
+      </div>
+
+      <div class="lang-block" data-lang="ko">
+        <h1>지원</h1>
+        <p>
+          이 페이지에는 Fonts Social 写真文字入れ-日本語English의 사용 방법, 권한, 저장, 공유, 개인정보 관련 지원 정보가 정리되어 있습니다.
+          App Store 지원 URL로 그대로 사용할 수 있습니다.
+        </p>
+        <div class="meta">
+          <div><span class="label">대상 앱:</span> Fonts Social 写真文字入れ-日本語English</div>
+          <div><span class="label">최종 업데이트:</span> 2026년 4월 3일</div>
+        </div>
+      </div>
     </section>
 
     <div class="grid">
@@ -299,6 +365,30 @@
           <p>If you need support, please contact us at the email address below.</p>
           <p><a href="mailto:tc4438ys@gmail.com">tc4438ys@gmail.com</a></p>
           <p>We will respond as soon as we can.</p>
+        </div>
+        <div class="lang-block" data-lang="el">
+          <h2>Επικοινωνία</h2>
+          <p>Αν χρειάζεστε υποστήριξη, επικοινωνήστε μαζί μας στο παρακάτω email.</p>
+          <p><a href="mailto:tc4438ys@gmail.com">tc4438ys@gmail.com</a></p>
+          <p>Θα απαντήσουμε το συντομότερο δυνατό.</p>
+        </div>
+        <div class="lang-block" data-lang="de">
+          <h2>Kontakt</h2>
+          <p>Wenn Sie Unterstützung benötigen, kontaktieren Sie uns bitte unter der folgenden E-Mail-Adresse.</p>
+          <p><a href="mailto:tc4438ys@gmail.com">tc4438ys@gmail.com</a></p>
+          <p>Wir antworten so schnell wie möglich.</p>
+        </div>
+        <div class="lang-block" data-lang="fr">
+          <h2>Contact</h2>
+          <p>Si vous avez besoin d’aide, contactez-nous à l’adresse e-mail ci-dessous.</p>
+          <p><a href="mailto:tc4438ys@gmail.com">tc4438ys@gmail.com</a></p>
+          <p>Nous répondrons dès que possible.</p>
+        </div>
+        <div class="lang-block" data-lang="ko">
+          <h2>문의</h2>
+          <p>지원이 필요하시면 아래 이메일 주소로 연락해 주세요.</p>
+          <p><a href="mailto:tc4438ys@gmail.com">tc4438ys@gmail.com</a></p>
+          <p>확인하는 대로 순차적으로 답변드리겠습니다.</p>
         </div>
       </section>
 
@@ -415,6 +505,114 @@
                 <li><strong>創造性</strong> はディテール補完が <code>50</code> まで、<strong>高精細</strong> は <code>51</code> までです。</li>
               </ul>
             </div>
+
+            <div class="subcard">
+              <h3>原文そのまま</h3>
+              <pre class="raw-text">&lt;Fonts Social 写真文字入れ-日本語English APPは画像、キャンバスに3Dの文字を挿入することができるシンプルなアプリです。&gt;
+・日本語、英語の3Dフォントが利用できます。
+・ 縦書きに対応しています。
+・ 文字のサイズを自由に変更できます。
+・ 文字の色を自由に変更できます。
+・ 文字の背景色を自由に変更できます。
+・ 文字を立体的に表現（3D）できます。
+・ 文字の間隔（カーニング）を自由に変更できます。
+・ 行の間隔を自由に変更できます。
+・ 文字の傾きを自由に変更できます。
+
+＜3D【world】では猫が表示される。実機でこれを試してみてください。＞
+・ 3D→Hide UI
+・猫だけ見えるか確認
+・画面タップで UI が戻るか確認
+・ Shoot
+・写真に保存 / 共有 の選択が出るか確認
+(3D→Camera On→外背景が live で見えるか確認→Shoot→share sheetまで行くか確認)
+
+＜Vectorでは、日常を整えるリマインダーアプリが使える。＞
+・簡単にタイマー、カレンダー予定、リマインダーがセットできます。全て繰り返し使えます。
+・タイマーは画面全体に通知されます。
+・設定できる期間に上限は無いです。
+
+「ボード」…ボード は、アートボードを追加・複製・削除する ツールです。使い方はこうです。
+1. 上の ボード を選ぶ
+2. 上に出る小さいバーで操作する
+3. ＋ で新しいアートボードを追加
+4. 重なった四角 で今のアートボードを複製
+5. ゴミ箱 で今のアートボードを削除
+ただし、1枚しかないときは削除できません
+
+「ブレンド」…ブレンド→1つ目タップ→2つ目タップで試してみてください。
+
+「パスとは？」パス は、ペン や 曲線 で作る自由な線や形のことです。
+このアプリではざっくりこう分かれます。
+・長方形 は長方形
+・円 は円
+・線 はまっすぐの線
+・パス は ペン / 曲線で作る自由形状。
+たとえば、
+・ペン で点を打って作った線
+・曲線 で作ったカーブは,パス です。
+一方で、
+・長方形
+・円は見た目は線でも、内部では 専用の図形 なので、今の ワープ では本格的には効きません。今の実機で ワープ を試すなら、上の ペン を選ぶ→1本線を描く→確定→ワープ→その線をドラッグが一番分かりやすいです。
+要するに、
+・パス = 自由に描いた線や形
+・長方形や円 = パスではない別の図形です。
+
+「ワープ」…変形したいオブジェクトをそのまま指でドラッグする 使い方です。
+使い方:
+・パス を1つ用意する
+・上の ワープ を選ぶ
+・変形したい線の上 をそのままドラッグする
+・指を離すと、その形で確定する。
+・補足です。何もない場所をドラッグしても何も起きません。
+・線の近く ではなく オブジェクト自体 をつかんでドラッグします。
+・今の ワープ は名前より中身が パスの局所ドラッグ変形 に近いです。
+
+「スポイト」…スポイト→項目をタップして吸い取り→必要なら適用
+
+「形成」…いまは 形成 専用に 1個目 を覚えるように変えていて、
+・1個目の閉じた図形をタップ
+・2個目の閉じた図形をタップで即合体します。
+もし重なっていて 2個目 が触りにくいときは、1個目をもう一度タップ すると重なっている相手と自動で形成します。
+（長方形を2つ少し重ねる→形成→1つ目タップ→2つ目タップ）
+
+「ハサミ」…Vector→ハサミ で、線の近くを1回タップしてみてください。ハサミは今、線の近くを1回タップしたらそのまま切れる挙動に寄せています。
+
+「ペン」…ケースは上段の ブラシ ツール内の ペン で、実機だけ PKCanvasView が Apple Pencil 専用 になっていました。なので指では描けませんでした。
+修正はここです。drawingPolicy を anyInput に変えて、実機 iPhone でも指でそのまま描けるようにしました。
+
+＜Photoは、高機能ツールを揃えた画像編集アプリです。＞
+・明るさ、彩度を調整することができます。
+・Photoを使用すれば写真、画像、デザインを様々な方法でカスタマイズできます。
+・複数のファイル形式に対応しています。
+・Photo→スタジオ→ルック→Noir を押してみてください。キャンバスと全体プレビューの両方で、変化が見えるはずです。
+・今回の版では Photo のスーパー解像度は 2X のみ
+    * 画質はこっちのほうが上を狙えます
+    * 細部補完や質感再現は CI より有利です
+    * ただし重いです
+    * 学習済みモデル作成、量子化、変換、端末別テストが必要です
+    * アプリサイズ、メモリ、発熱、処理時間の管理も必要です
+（Photo→補正→詳細ツール→スーパー解像度→2X）
+スーパー解像度 の 創造性 は、実機で ディテール補完 が 50 までで止まるようにしています。
+変更はここです。
+* 創造性 = 50 の上限を追加
+モデル切替時も自動でその上限に丸める
+UI スライダーも 創造性 選択時は 0...50 を使う
+高精細 は 51、創造性 は 50、標準 は 54 で止まります。
+
+今の 実機 iPhone で見えるもの:
+基本補正 は 補正 タブにあります。
+白黒 は Monochrome と B/W mixer として見えます。
+粒子 は Grain として見えます。
+ノイズ除去 は見えます。
+カラーグレーディング は見えます。
+カラーミキサー は見えます。
+条件付きで見えるもの:
+文字間調節 は テキストレイヤー選択時 に 字間 / 行間 として見えます。
+グラデーションマップ は 調整レイヤー選択時 に見えます。
+RAWディテール は Studio &gt; Desktop Panels &gt; Camera Raw 側に RAW 読み込み時の導線があります。
+フィルタ は独立した フィルタ パネルとしては見えず、Blur / Motion Blur / Sharpen / Glow などが基本補正側へ分散しています。</pre>
+            </div>
           </div>
         </div>
         <div class="lang-block" data-lang="en">
@@ -470,6 +668,198 @@
             </div>
           </div>
         </div>
+        <div class="lang-block" data-lang="el">
+          <h2>Οδηγός Υποστήριξης</h2>
+          <div class="section-stack">
+            <div class="subcard">
+              <h3>Επισκόπηση</h3>
+              <p>Το Fonts Social 写真文字入れ-日本語English είναι μια απλή εφαρμογή για τοποθέτηση 3D κειμένου πάνω σε εικόνες και καμβάδες.</p>
+              <ul>
+                <li>3D γραμματοσειρές στα ιαπωνικά και στα αγγλικά</li>
+                <li>Υποστήριξη κάθετης γραφής</li>
+                <li>Ελεύθερη αλλαγή μεγέθους, χρώματος, χρώματος φόντου, κενού χαρακτήρων, διαστήματος γραμμών και κλίσης</li>
+                <li>3D στυλ κειμένου για δημιουργικές συνθέσεις</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h3>3D / world3</h3>
+              <ul>
+                <li>Δοκιμάστε <code>3D -> Hide UI</code> για να εμφανιστεί μόνο η γάτα.</li>
+                <li>Αγγίξτε την οθόνη για να επιστρέψει το UI.</li>
+                <li>Πατήστε <code>Shoot</code> και ελέγξτε αν εμφανίζονται οι επιλογές αποθήκευσης / κοινής χρήσης.</li>
+                <li>Στη λειτουργία live camera, δοκιμάστε <code>Camera On</code> και βεβαιωθείτε ότι το εξωτερικό φόντο φαίνεται πριν από τη λήψη.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h3>Vector</h3>
+              <ul>
+                <li>Μπορείτε να δημιουργείτε και να επαναχρησιμοποιείτε χρονοδιακόπτες, συμβάντα ημερολογίου και υπενθυμίσεις.</li>
+                <li>Το Board προσθέτει, αντιγράφει και διαγράφει artboards.</li>
+                <li>Το Blend συνδυάζει δύο επιλεγμένα αντικείμενα.</li>
+                <li>Το Path είναι ελεύθερο σχήμα που δημιουργείται με Pen ή Curve.</li>
+                <li>Το Warp λειτουργεί σύροντας απευθείας το αντικείμενο.</li>
+                <li>Το Eyedropper παίρνει και εφαρμόζει χρώματα.</li>
+                <li>Το Shape Builder ενώνει κλειστά σχήματα.</li>
+                <li>Το Scissors κόβει με ένα άγγιγμα κοντά στη γραμμή.</li>
+                <li>Το Pen στο εργαλείο brush υποστηρίζει αφή στο iPhone.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h3>Photo</h3>
+              <ul>
+                <li>Ρύθμιση φωτεινότητας, κορεσμού και άλλων επεξεργασιών εικόνας</li>
+                <li>Υποστήριξη πολλών μορφών αρχείων</li>
+                <li>Look presets όπως το <code>Noir</code></li>
+                <li>Λεπτομερή εργαλεία όπως monochrome, grain, denoise, color grading και color mixer</li>
+                <li>Το Super Resolution υποστηρίζει προς το παρόν μόνο <code>2X</code></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="lang-block" data-lang="de">
+          <h2>Support-Leitfaden</h2>
+          <div class="section-stack">
+            <div class="subcard">
+              <h3>Überblick</h3>
+              <p>Fonts Social 写真文字入れ-日本語English ist eine einfache App, mit der sich 3D-Text auf Bilder und Leinwände setzen lässt.</p>
+              <ul>
+                <li>Japanische und englische 3D-Schriften</li>
+                <li>Unterstützung für vertikalen Text</li>
+                <li>Freie Anpassung von Größe, Farbe, Hintergrundfarbe, Kerning, Zeilenabstand und Neigung</li>
+                <li>3D-Textstile für kreative Layouts</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h3>3D / world3</h3>
+              <ul>
+                <li>Testen Sie <code>3D -> Hide UI</code>, um nur die Katze anzuzeigen.</li>
+                <li>Tippen Sie auf den Bildschirm, um die UI wieder einzublenden.</li>
+                <li>Verwenden Sie <code>Shoot</code> und prüfen Sie, ob Speichern / Teilen erscheint.</li>
+                <li>Testen Sie im Live-Kameramodus <code>Camera On</code> und prüfen Sie, ob der Hintergrund live sichtbar ist.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h3>Vector</h3>
+              <ul>
+                <li>Timer, Kalenderereignisse und Erinnerungen können erstellt und wiederverwendet werden.</li>
+                <li>Board fügt Artboards hinzu, dupliziert sie und löscht sie.</li>
+                <li>Blend kombiniert zwei ausgewählte Objekte.</li>
+                <li>Path bezeichnet freie Formen aus Pen oder Curve.</li>
+                <li>Warp funktioniert durch direktes Ziehen des Objekts.</li>
+                <li>Die Pipette übernimmt und wendet Farben an.</li>
+                <li>Shape Builder verbindet geschlossene Formen.</li>
+                <li>Scissors schneidet mit einem Tipp nahe an einer Linie.</li>
+                <li>Pen im Brush-Tool unterstützt Fingerbedienung auf dem iPhone.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h3>Photo</h3>
+              <ul>
+                <li>Helligkeit, Sättigung und weitere Bildanpassungen</li>
+                <li>Unterstützung für mehrere Dateiformate</li>
+                <li>Look-Presets wie <code>Noir</code></li>
+                <li>Detaillierte Werkzeuge wie Monochrome, Grain, Denoise, Color Grading und Color Mixer</li>
+                <li>Super Resolution unterstützt derzeit nur <code>2X</code></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="lang-block" data-lang="fr">
+          <h2>Guide d’assistance</h2>
+          <div class="section-stack">
+            <div class="subcard">
+              <h3>Présentation</h3>
+              <p>Fonts Social 写真文字入れ-日本語English est une application simple permettant d’ajouter du texte 3D sur des images et des canevas.</p>
+              <ul>
+                <li>Polices 3D japonaises et anglaises</li>
+                <li>Prise en charge de l’écriture verticale</li>
+                <li>Réglage libre de la taille, de la couleur, de l’arrière-plan, du crénage, de l’interligne et de l’inclinaison</li>
+                <li>Styles de texte 3D pour des compositions créatives</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h3>3D / world3</h3>
+              <ul>
+                <li>Essayez <code>3D -> Hide UI</code> pour n’afficher que le chat.</li>
+                <li>Touchez l’écran pour faire revenir l’interface.</li>
+                <li>Utilisez <code>Shoot</code> et vérifiez que les options d’enregistrement / partage apparaissent.</li>
+                <li>En mode caméra live, testez <code>Camera On</code> et vérifiez que l’arrière-plan extérieur est visible.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h3>Vector</h3>
+              <ul>
+                <li>Les minuteurs, événements de calendrier et rappels peuvent être créés et réutilisés.</li>
+                <li>Board ajoute, duplique et supprime les plans de travail.</li>
+                <li>Blend fusionne deux objets sélectionnés.</li>
+                <li>Path désigne les formes libres créées avec Pen ou Curve.</li>
+                <li>Warp s’utilise en faisant glisser directement l’objet.</li>
+                <li>La pipette prélève et applique les couleurs.</li>
+                <li>Shape Builder fusionne les formes fermées.</li>
+                <li>Scissors coupe en touchant près d’une ligne.</li>
+                <li>Pen dans l’outil brush prend en charge l’entrée au doigt sur iPhone.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h3>Photo</h3>
+              <ul>
+                <li>Réglages de luminosité, saturation et autres corrections d’image</li>
+                <li>Compatibilité avec plusieurs formats de fichiers</li>
+                <li>Préréglages de style comme <code>Noir</code></li>
+                <li>Outils détaillés comme monochrome, grain, réduction du bruit, color grading et color mixer</li>
+                <li>La super résolution prend actuellement en charge uniquement <code>2X</code></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="lang-block" data-lang="ko">
+          <h2>지원 가이드</h2>
+          <div class="section-stack">
+            <div class="subcard">
+              <h3>개요</h3>
+              <p>Fonts Social 写真文字入れ-日本語English는 이미지와 캔버스에 3D 텍스트를 배치할 수 있는 간단한 앱입니다.</p>
+              <ul>
+                <li>일본어와 영어 3D 폰트</li>
+                <li>세로쓰기 지원</li>
+                <li>크기, 색상, 배경색, 자간, 줄간격, 기울기를 자유롭게 조절 가능</li>
+                <li>창의적인 레이아웃을 위한 3D 텍스트 스타일</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h3>3D / world3</h3>
+              <ul>
+                <li><code>3D -> Hide UI</code> 로 고양이만 보이게 테스트해 보세요.</li>
+                <li>화면을 탭하면 UI 가 다시 나타나는지 확인하세요.</li>
+                <li><code>Shoot</code> 후 저장 / 공유 선택이 뜨는지 확인하세요.</li>
+                <li>라이브 카메라 모드에서는 <code>Camera On</code> 후 바깥 배경이 live 로 보이는지 확인하세요.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h3>Vector</h3>
+              <ul>
+                <li>타이머, 캘린더 일정, 미리 알림을 만들고 반복해서 사용할 수 있습니다.</li>
+                <li>Board 는 아트보드를 추가, 복제, 삭제합니다.</li>
+                <li>Blend 는 선택한 두 개의 오브젝트를 합칩니다.</li>
+                <li>Path 는 Pen 또는 Curve 로 만든 자유형 선/도형입니다.</li>
+                <li>Warp 는 오브젝트를 직접 드래그해서 사용합니다.</li>
+                <li>스포이트는 색을 추출하고 적용합니다.</li>
+                <li>Shape Builder 는 닫힌 도형을 합칩니다.</li>
+                <li>Scissors 는 선 근처를 탭해서 자릅니다.</li>
+                <li>Brush 도구 안의 Pen 은 iPhone 에서 손가락 입력을 지원합니다.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h3>Photo</h3>
+              <ul>
+                <li>밝기, 채도 등 다양한 이미지 조정</li>
+                <li>여러 파일 형식 지원</li>
+                <li><code>Noir</code> 같은 룩 프리셋</li>
+                <li>흑백, 그레인, 노이즈 제거, 컬러 그레이딩, 컬러 믹서 등 세부 도구</li>
+                <li>슈퍼 해상도는 현재 <code>2X</code> 만 지원합니다.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="card">
@@ -487,6 +877,34 @@
             <a class="button-link" href="./">Back to Top</a>
           </div>
         </div>
+        <div class="lang-block" data-lang="el">
+          <h2>Σχετικές Σελίδες</h2>
+          <div class="links">
+            <a class="button-link" href="./glyphcam-privacy-policy.html">Πολιτική Απορρήτου</a>
+            <a class="button-link" href="./">Επιστροφή στην κορυφή</a>
+          </div>
+        </div>
+        <div class="lang-block" data-lang="de">
+          <h2>Verwandte Seiten</h2>
+          <div class="links">
+            <a class="button-link" href="./glyphcam-privacy-policy.html">Datenschutzerklärung</a>
+            <a class="button-link" href="./">Zurück nach oben</a>
+          </div>
+        </div>
+        <div class="lang-block" data-lang="fr">
+          <h2>Pages associées</h2>
+          <div class="links">
+            <a class="button-link" href="./glyphcam-privacy-policy.html">Politique de confidentialité</a>
+            <a class="button-link" href="./">Retour en haut</a>
+          </div>
+        </div>
+        <div class="lang-block" data-lang="ko">
+          <h2>관련 페이지</h2>
+          <div class="links">
+            <a class="button-link" href="./glyphcam-privacy-policy.html">개인정보 처리방침</a>
+            <a class="button-link" href="./">맨 위로 돌아가기</a>
+          </div>
+        </div>
       </section>
     </div>
   </main>
@@ -496,8 +914,16 @@
       const storageKey = "glyphcam-site-lang";
       const buttons = Array.from(document.querySelectorAll("[data-switch-lang]"));
       const preferred = localStorage.getItem(storageKey);
-      const browserPrefersJapanese = (navigator.language || "").toLowerCase().startsWith("ja");
-      const initialLang = preferred || (browserPrefersJapanese ? "ja" : "en");
+      const browserLang = (navigator.language || "").toLowerCase();
+      const fallbackLang = (() => {
+        if (browserLang.startsWith("ja")) return "ja";
+        if (browserLang.startsWith("el")) return "el";
+        if (browserLang.startsWith("de")) return "de";
+        if (browserLang.startsWith("fr")) return "fr";
+        if (browserLang.startsWith("ko")) return "ko";
+        return "en";
+      })();
+      const initialLang = preferred || fallbackLang;
 
       function applyLanguage(lang) {
         document.body.setAttribute("data-lang", lang);
